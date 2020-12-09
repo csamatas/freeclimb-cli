@@ -66,7 +66,7 @@ export class SetPasswordError extends FreeClimbError {
                 1005,
                 "Keytar Error",
                 "https://docs.freeclimb.com/reference/error-and-warning-dictionary",
-                `Re-run the login command. /nIf the error persists, please contact support@freeclimb.com`
+                `Re-run the login command. \nIf the error persists, please contact support@freeclimb.com`
             ),
             4
         )
