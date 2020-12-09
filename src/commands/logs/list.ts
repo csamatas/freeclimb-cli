@@ -13,7 +13,7 @@ export class logsList extends Command {
             description: "Show only a certain number of the most recent logs on this page.",
         }),
         next: flags.boolean({ char: "n", description: "Displays the next page of output." }),
-        help: flags.help({ char: "h" }),
+        help: flags.help(),
     }
 
     async run() {

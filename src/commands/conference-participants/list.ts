@@ -21,7 +21,7 @@ export class conferenceParticipantsList extends Command {
             options: ["true", "false"],
         }),
         next: flags.boolean({ char: "n", description: "Displays the next page of output." }),
-        help: flags.help({ char: "h" }),
+        help: flags.help(),
     }
 
     static args = [

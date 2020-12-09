@@ -10,7 +10,7 @@ Any Call which is currently ringing is in progress from the point of view of Fre
 
     static flags = {
         next: flags.boolean({ hidden: true }),
-        help: flags.help({ char: "h" }),
+        help: flags.help(),
     }
 
     static args = [

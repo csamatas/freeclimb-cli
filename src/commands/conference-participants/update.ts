@@ -23,7 +23,7 @@ export class conferenceParticipantsUpdate extends Command {
             options: ["true", "false"],
         }),
         next: flags.boolean({ hidden: true }),
-        help: flags.help({ char: "h" }),
+        help: flags.help(),
     }
 
     static args = [

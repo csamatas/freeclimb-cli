@@ -18,9 +18,9 @@ ARGUMENTS
   PQL  The filter query for retrieving logs. See Performance Query Language below.
 
 OPTIONS
-  -h, --help             show CLI help
   -m, --maxItem=maxItem  Show only a certain number of the most recent logs on this page.
   -n, --next             Displays the next page of output.
+  --help                 show CLI help
 ```
 
 _See code: [src/commands/logs/filter.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/logs/filter.ts)_
@@ -34,9 +34,9 @@ USAGE
   $ freeclimb logs:list
 
 OPTIONS
-  -h, --help             show CLI help
   -m, --maxItem=maxItem  Show only a certain number of the most recent logs on this page.
   -n, --next             Displays the next page of output.
+  --help                 show CLI help
 ```
 
 _See code: [src/commands/logs/list.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/logs/list.ts)_

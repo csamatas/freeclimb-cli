@@ -210,7 +210,7 @@ function getAdditionalFlags(topicName, pagination) {
         data += "\n\t\tnext: flags.boolean({hidden: true})," // so that the command can still parse, but users will not see this flag
     }
 
-    data += "\n\t\thelp: flags.help({char: 'h'}),\n\t"
+    data += "\n\t\thelp: flags.help(),\n\t"
 
     return data
 }

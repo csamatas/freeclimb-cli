@@ -15,13 +15,13 @@ export class applicationsUpdate extends Command {
             required: false,
         }),
         voiceUrl: flags.string({
-            char: "v",
+            char: "V",
             description:
                 "The URL that FreeClimb will request when an inbound call arrives on a phone number assigned to this application. Used only for inbound calls.",
             required: false,
         }),
         voiceFallbackUrl: flags.string({
-            char: "V",
+            char: "F",
             description:
                 "The URL that FreeClimb will request if it times out waiting for a response from the voiceUrl. Used for inbound calls only. Note: A PerCL response is expected to control the inbound call.",
             required: false,
@@ -45,13 +45,13 @@ export class applicationsUpdate extends Command {
             required: false,
         }),
         smsFallbackUrl: flags.string({
-            char: "F",
+            char: "U",
             description:
                 "The URL that FreeClimb will request if it times out waiting for a response from the smsUrl. Used for inbound SMS only.  Note: Any PerCL returned will be ignored.",
             required: false,
         }),
         next: flags.boolean({ hidden: true }),
-        help: flags.help({ char: "h" }),
+        help: flags.help(),
     }
 
     static args = [

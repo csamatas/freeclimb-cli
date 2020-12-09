@@ -22,8 +22,6 @@ OPTIONS
   -b, --playBeep=playBeep                    Controls when a beep is played. Valid values: always, never, entryOnly,
                                              exitOnly.
 
-  -h, --help                                 show CLI help
-
   -r, --record=true|false                    Setting to true records the entire Conference.
 
   -s, --statusCallbackUrl=statusCallbackUrl  This URL is invoked when the status of the Conference changes. For more
@@ -33,6 +31,8 @@ OPTIONS
                                              the Conference when it is in the populated state. Otherwise, FreeClimb uses
                                              a system default audio file. This is always fetched using HTTP GET and is
                                              fetched just once — when the Conference is created.
+
+  --help                                     show CLI help
 ```
 
 _See code: [src/commands/conferences/create.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/conferences/create.ts)_
@@ -49,8 +49,8 @@ ARGUMENTS
   CONFERENCEID  A string that uniquely identifies this conference resource.
 
 OPTIONS
-  -h, --help  show CLI help
   -n, --next  Displays the next page of output.
+  --help      show CLI help
 ```
 
 _See code: [src/commands/conferences/get.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/conferences/get.ts)_
@@ -74,9 +74,9 @@ OPTIONS
 
   -d, --dateCreated=dateCreated  Only show Conferences that were created on the specified date, in the form YYYY-MM-DD.
 
-  -h, --help                     show CLI help
-
   -n, --next                     Displays the next page of output.
+
+  --help                         show CLI help
 ```
 
 _See code: [src/commands/conferences/list.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/conferences/list.ts)_
@@ -100,7 +100,7 @@ OPTIONS
 
   -b, --playBeep=playBeep  Controls when a beep is played. Valid values: always, never, entryOnly, exitOnly.
 
-  -h, --help               show CLI help
+  --help                   show CLI help
 ```
 
 _See code: [src/commands/conferences/update.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/conferences/update.ts)_

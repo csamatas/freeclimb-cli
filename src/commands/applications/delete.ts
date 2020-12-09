@@ -10,7 +10,7 @@ If successful, FreeClimb will return an HTTP 204 response with no body.`
 
     static flags = {
         next: flags.boolean({ hidden: true }),
-        help: flags.help({ char: "h" }),
+        help: flags.help(),
     }
 
     static args = [

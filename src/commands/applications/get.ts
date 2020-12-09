@@ -9,7 +9,7 @@ export class applicationsGet extends Command {
 
     static flags = {
         next: flags.boolean({ char: "n", description: "Displays the next page of output." }),
-        help: flags.help({ char: "h" }),
+        help: flags.help(),
     }
 
     static args = [

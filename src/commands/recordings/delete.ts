@@ -9,7 +9,7 @@ export class recordingsDelete extends Command {
 
     static flags = {
         next: flags.boolean({ hidden: true }),
-        help: flags.help({ char: "h" }),
+        help: flags.help(),
     }
 
     static args = [

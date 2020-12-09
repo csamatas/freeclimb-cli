@@ -22,8 +22,8 @@ ARGUMENTS
   CALLID  String that uniquely identifies this call resource.
 
 OPTIONS
-  -h, --help  show CLI help
   -n, --next  Displays the next page of output.
+  --help      show CLI help
 ```
 
 _See code: [src/commands/calls/get.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/calls/get.ts)_
@@ -46,13 +46,13 @@ OPTIONS
 
   -f, --from=from                  Only show Calls from this phone number.
 
-  -h, --help                       show CLI help
-
   -n, --next                       Displays the next page of output.
 
   -s, --startTime=startTime        Only show Calls that started at or after this time, given as YYYY-MM-DD hh:mm:ss.
 
   -t, --to=to                      Only show Calls to this phone number.
+
+  --help                           show CLI help
 ```
 
 _See code: [src/commands/calls/list.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/calls/list.ts)_
@@ -70,8 +70,8 @@ ARGUMENTS
 
 OPTIONS
   -d, --dateCreated=dateCreated  Only show recordings created on the specified date, in the form YYYY-MM-DD.
-  -h, --help                     show CLI help
   -n, --next                     Displays the next page of output.
+  --help                         show CLI help
 ```
 
 _See code: [src/commands/calls/list-call.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/calls/list-call.ts)_
@@ -88,8 +88,8 @@ ARGUMENTS
   CALLID  String that uniquely identifies this call resource.
 
 OPTIONS
-  -h, --help  show CLI help
   -n, --next  Displays the next page of output.
+  --help      show CLI help
 ```
 
 _See code: [src/commands/calls/list-call-logs.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/calls/list-call-logs.ts)_
@@ -126,9 +126,6 @@ OPTIONS
       ringing.  An outbound call is considered to be in progress once the outdialConnect or outdialApiConnect webhook is 
       invoked.  An inbound call is ringing when the inbound webhook is invoked.
 
-  -h, --help
-      show CLI help
-
   -i, --ifMachine=ifMachine
       Specifies how FreeClimb should handle this Call if an answering machine answers it.
 
@@ -142,6 +139,9 @@ OPTIONS
       Number of seconds that FreeClimb should allow the phone to ring before assuming there is no answer. Default is 30 
       seconds. Maximum allowed ring-time is determined by the target phone's provider. Note that most providers limit 
       ring-time to 120 seconds.
+
+  --help
+      show CLI help
 
 DESCRIPTION
   callConnectUrl almost always is invoked before the ifMachineUrl. Therefore, if PerCL returned by callConnectUrl is 
@@ -167,7 +167,7 @@ ARGUMENTS
           calls already in progress. Specifying completed attempts to hang up a call already in progress.
 
 OPTIONS
-  -h, --help  show CLI help
+  --help  show CLI help
 
 DESCRIPTION
   Any Call which is currently ringing is in progress from the point of view of FreeClimb, and requires a  

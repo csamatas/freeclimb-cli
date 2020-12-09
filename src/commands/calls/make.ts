@@ -40,7 +40,7 @@ callConnectUrl almost always is invoked before the ifMachineUrl. Therefore, if P
             required: false,
         }),
         next: flags.boolean({ hidden: true }),
-        help: flags.help({ char: "h" }),
+        help: flags.help(),
     }
 
     static args = [

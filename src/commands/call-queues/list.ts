@@ -15,7 +15,7 @@ export class callQueuesList extends Command {
             required: false,
         }),
         next: flags.boolean({ char: "n", description: "Displays the next page of output." }),
-        help: flags.help({ char: "h" }),
+        help: flags.help(),
     }
 
     async run() {

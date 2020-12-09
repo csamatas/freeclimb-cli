@@ -19,8 +19,8 @@ ARGUMENTS
   MESSAGEID  String that uniquely identifies this Message resource.
 
 OPTIONS
-  -h, --help  show CLI help
   -n, --next  Displays the next page of output.
+  --help      show CLI help
 ```
 
 _See code: [src/commands/sms/get.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/sms/get.ts)_
@@ -44,11 +44,11 @@ OPTIONS
 
   -f, --from=from            Only show Messages from this phone number.
 
-  -h, --help                 show CLI help
-
   -n, --next                 Displays the next page of output.
 
   -t, --to=to                Only show Messages to this phone number.
+
+  --help                     show CLI help
 ```
 
 _See code: [src/commands/sms/list.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/sms/list.ts)_
@@ -71,11 +71,12 @@ ARGUMENTS
 
 OPTIONS
   -a, --accountId=accountId              String that uniquely identifies this account resource.
-  -h, --help                             show CLI help
 
   -n, --notificationUrl=notificationUrl  When the Message changes status, this URL is invoked using HTTP POST with the
                                          messageStatus parameters.  Note: This is a notification only; any PerCL
                                          returned is ignored.
+
+  --help                                 show CLI help
 ```
 
 _See code: [src/commands/sms/send.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/sms/send.ts)_

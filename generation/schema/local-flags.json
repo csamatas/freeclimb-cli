@@ -9,5 +9,8 @@
   "next": {
     "description": "Displays the next page of output.",
     "char": "n"
+  },
+  "version": {
+    "char": "v"
   }
 }

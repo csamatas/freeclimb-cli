@@ -18,21 +18,23 @@ USAGE
   $ freeclimb applications:create
 
 OPTIONS
-  -F, --smsFallbackUrl=smsFallbackUrl        URL that FreeClimb will request if it times out waiting for a response from
+  -F, --voiceFallbackUrl=voiceFallbackUrl    URL that FreeClimb will request if it times out waiting for a response from
+                                             the voiceUrl. Used for inbound calls only. Note: A PerCL response is
+                                             expected to control the inbound call.
+
+  -U, --smsFallbackUrl=smsFallbackUrl        URL that FreeClimb will request if it times out waiting for a response from
                                              the smsUrl. Used for inbound SMS only. Note: Any PerCL returned will be
                                              ignored.
 
-  -V, --voiceFallbackUrl=voiceFallbackUrl    URL that FreeClimb will request if it times out waiting for a response from
-                                             the voiceUrl. Used for inbound calls only. Note: A PerCL response is
-                                             expected to control the inbound call.
+  -V, --voiceUrl=voiceUrl                    URL that FreeClimb should request when an inbound call arrives on a phone
+                                             number assigned to this application. Used only for inbound calls. Note: A
+                                             PerCL response is expected to control the inbound call.
 
   -a, --alias=alias                          Description of the new application (maximum 64 characters).
 
   -c, --callConnectUrl=callConnectUrl        URL that FreeClimb will request when an outbound call request is complete.
                                              Used for outbound calls only. Note: A PerCL response is expected if the
                                              outbound call is connected (status=InProgress) to control the call.
-
-  -h, --help                                 show CLI help
 
   -s, --statusCallbackUrl=statusCallbackUrl  URL that FreeClimb will request to pass call status (such as call ended) to
                                              the application. Note: This is a notification only; any PerCL returned will
@@ -42,9 +44,7 @@ OPTIONS
                                              application receives an incoming SMS message. Used for inbound SMS only.
                                              Note: Any PerCL returned will be ignored.
 
-  -v, --voiceUrl=voiceUrl                    URL that FreeClimb should request when an inbound call arrives on a phone
-                                             number assigned to this application. Used only for inbound calls. Note: A
-                                             PerCL response is expected to control the inbound call.
+  --help                                     show CLI help
 ```
 
 _See code: [src/commands/applications/create.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/applications/create.ts)_
@@ -61,7 +61,7 @@ ARGUMENTS
   APPLICATIONID  String that uniquely identifies this application resource.
 
 OPTIONS
-  -h, --help  show CLI help
+  --help  show CLI help
 
 DESCRIPTION
   If successful, FreeClimb will return an HTTP 204 response with no body.
@@ -81,8 +81,8 @@ ARGUMENTS
   APPLICATIONID  A string that uniquely identifies this application resource.
 
 OPTIONS
-  -h, --help  show CLI help
   -n, --next  Displays the next page of output.
+  --help      show CLI help
 ```
 
 _See code: [src/commands/applications/get.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/applications/get.ts)_
@@ -97,8 +97,8 @@ USAGE
 
 OPTIONS
   -a, --alias=alias  Return only applications with aliases that exactly match this value.
-  -h, --help         show CLI help
   -n, --next         Displays the next page of output.
+  --help             show CLI help
 ```
 
 _See code: [src/commands/applications/list.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/applications/list.ts)_
@@ -115,13 +115,16 @@ ARGUMENTS
   APPLICATIONID  A string that uniquely identifies this application resource.
 
 OPTIONS
-  -F, --smsFallbackUrl=smsFallbackUrl        The URL that FreeClimb will request if it times out waiting for a response
+  -F, --voiceFallbackUrl=voiceFallbackUrl    The URL that FreeClimb will request if it times out waiting for a response
+                                             from the voiceUrl. Used for inbound calls only. Note: A PerCL response is
+                                             expected to control the inbound call.
+
+  -U, --smsFallbackUrl=smsFallbackUrl        The URL that FreeClimb will request if it times out waiting for a response
                                              from the smsUrl. Used for inbound SMS only.  Note: Any PerCL returned will
                                              be ignored.
 
-  -V, --voiceFallbackUrl=voiceFallbackUrl    The URL that FreeClimb will request if it times out waiting for a response
-                                             from the voiceUrl. Used for inbound calls only. Note: A PerCL response is
-                                             expected to control the inbound call.
+  -V, --voiceUrl=voiceUrl                    The URL that FreeClimb will request when an inbound call arrives on a phone
+                                             number assigned to this application. Used only for inbound calls.
 
   -a, --alias=alias                          A human readable description of the application, with maximum length 64
                                              characters.
@@ -129,8 +132,6 @@ OPTIONS
   -c, --callConnectUrl=callConnectUrl        The URL that FreeClimb will request when an outbound call request is
                                              complete. Used for outbound calls only.  Note: A PerCL response is expected
                                              if the outbound call is connected (status=InProgress) to control the call.
-
-  -h, --help                                 show CLI help
 
   -s, --statusCallbackUrl=statusCallbackUrl  The URL that FreeClimb will request to pass call status (such as call
                                              ended) to the application.  Note: This is a notification only; any PerCL
@@ -140,8 +141,7 @@ OPTIONS
                                              application receives an incoming SMS message. Used for inbound SMS only.
                                              Note: Any PerCL returned will be ignored.
 
-  -v, --voiceUrl=voiceUrl                    The URL that FreeClimb will request when an inbound call arrives on a phone
-                                             number assigned to this application. Used only for inbound calls.
+  --help                                     show CLI help
 ```
 
 _See code: [src/commands/applications/update.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/applications/update.ts)_

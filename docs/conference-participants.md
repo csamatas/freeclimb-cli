@@ -21,8 +21,8 @@ ARGUMENTS
   CALLID        ID of the Call associated with this participant.
 
 OPTIONS
-  -h, --help  show CLI help
   -n, --next  Displays the next page of output.
+  --help      show CLI help
 ```
 
 _See code: [src/commands/conference-participants/get.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/conference-participants/get.ts)_
@@ -40,9 +40,9 @@ ARGUMENTS
 
 OPTIONS
   -T, --talk=true|false    Only show Participants with the talk privilege.
-  -h, --help               show CLI help
   -l, --listen=true|false  Only show Participants with the listen privilege.
   -n, --next               Displays the next page of output.
+  --help                   show CLI help
 ```
 
 _See code: [src/commands/conference-participants/list.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/conference-participants/list.ts)_
@@ -60,7 +60,7 @@ ARGUMENTS
   CALLID        ID of the Call associated with this participant.
 
 OPTIONS
-  -h, --help  show CLI help
+  --help  show CLI help
 ```
 
 _See code: [src/commands/conference-participants/remove.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/conference-participants/remove.ts)_
@@ -81,10 +81,10 @@ OPTIONS
   -T, --talk=true|false    (Optional) Default is true. Setting to false mutes the Participant. FreeClimb returns an
                            error and ignores any other value.
 
-  -h, --help               show CLI help
-
   -l, --listen=true|false  (Optional) Default is true. Setting to false silences the Conference for this Participant.
                            FreeClimb returns an error and ignores any other value.
+
+  --help                   show CLI help
 ```
 
 _See code: [src/commands/conference-participants/update.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/conference-participants/update.ts)_

@@ -19,7 +19,7 @@ USAGE
 OPTIONS
   -M, --maxSize=maxSize  Maximum number of Calls this queue can hold. Default is 1000. Maximum is 1000.
   -a, --alias=alias      A description for this Queue. Max length is 64 characters.
-  -h, --help             show CLI help
+  --help                 show CLI help
 ```
 
 _See code: [src/commands/call-queues/create.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/call-queues/create.ts)_
@@ -36,8 +36,8 @@ ARGUMENTS
   QUEUEID  A string that uniquely identifies this queue resource.
 
 OPTIONS
-  -h, --help  show CLI help
   -n, --next  Displays the next page of output.
+  --help      show CLI help
 ```
 
 _See code: [src/commands/call-queues/get.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/call-queues/get.ts)_
@@ -52,8 +52,8 @@ USAGE
 
 OPTIONS
   -a, --alias=alias  Return only the Queue resources with aliases that exactly match this name.
-  -h, --help         show CLI help
   -n, --next         Displays the next page of output.
+  --help             show CLI help
 ```
 
 _See code: [src/commands/call-queues/list.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/call-queues/list.ts)_
@@ -76,7 +76,7 @@ OPTIONS
 
   -a, --alias=alias      Description for this Queue. Max length is 64 characters.
 
-  -h, --help             show CLI help
+  --help                 show CLI help
 ```
 
 _See code: [src/commands/call-queues/update.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/call-queues/update.ts)_

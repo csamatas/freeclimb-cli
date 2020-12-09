@@ -15,7 +15,7 @@ USAGE
   $ freeclimb accounts:get
 
 OPTIONS
-  -h, --help  show CLI help
+  --help  show CLI help
 ```
 
 _See code: [src/commands/accounts/get.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/accounts/get.ts)_
@@ -30,8 +30,8 @@ USAGE
 
 OPTIONS
   -a, --alias=alias  Description for this account.
-  -h, --help         show CLI help
   -l, --label=label  Group to which this account belongs.
+  --help             show CLI help
 ```
 
 _See code: [src/commands/accounts/manage.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/accounts/manage.ts)_

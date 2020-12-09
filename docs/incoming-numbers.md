@@ -23,7 +23,7 @@ ARGUMENTS
 OPTIONS
   -A, --applicationId=applicationId  ID of the application that should handle phone calls to the number.
   -a, --alias=alias                  Description for this new incoming phone number (max 64 characters).
-  -h, --help                         show CLI help
+  --help                             show CLI help
 ```
 
 _See code: [src/commands/incoming-numbers/buy.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/incoming-numbers/buy.ts)_
@@ -40,7 +40,7 @@ ARGUMENTS
   PHONENUMBERID  String that uniquely identifies this phone number resource.
 
 OPTIONS
-  -h, --help  show CLI help
+  --help  show CLI help
 ```
 
 _See code: [src/commands/incoming-numbers/delete.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/incoming-numbers/delete.ts)_
@@ -57,8 +57,8 @@ ARGUMENTS
   PHONENUMBERID  String that uniquely identifies this phone number resource.
 
 OPTIONS
-  -h, --help  show CLI help
   -n, --next  Displays the next page of output.
+  --help      show CLI help
 ```
 
 _See code: [src/commands/incoming-numbers/get.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/incoming-numbers/get.ts)_
@@ -73,11 +73,12 @@ USAGE
 
 OPTIONS
   -a, --alias=alias              Only show incoming phone numbers with aliases that exactly match this value.
-  -h, --help                     show CLI help
   -n, --next                     Displays the next page of output.
 
   -p, --phoneNumber=phoneNumber  Only show incoming phone number resources that match this PCRE-compatible  regular
                                  expression.
+
+  --help                         show CLI help
 ```
 
 _See code: [src/commands/incoming-numbers/list.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/incoming-numbers/list.ts)_
@@ -96,7 +97,7 @@ ARGUMENTS
 OPTIONS
   -A, --applicationId=applicationId  ID of the Application that should handle calls to this number.
   -a, --alias=alias                  Description for this phone number.
-  -h, --help                         show CLI help
+  --help                             show CLI help
 ```
 
 _See code: [src/commands/incoming-numbers/update.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/incoming-numbers/update.ts)_

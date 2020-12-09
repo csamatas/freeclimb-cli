@@ -21,7 +21,7 @@ ARGUMENTS
   RECORDINGID  String that uniquely identifies this recording resource.
 
 OPTIONS
-  -h, --help  show CLI help
+  --help  show CLI help
 ```
 
 _See code: [src/commands/recordings/delete.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/recordings/delete.ts)_
@@ -38,8 +38,8 @@ ARGUMENTS
   RECORDINGID  String that uniquely identifies this recording resource.
 
 OPTIONS
-  -h, --help  show CLI help
   -n, --next  Displays the next page of output.
+  --help      show CLI help
 ```
 
 _See code: [src/commands/recordings/download.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/recordings/download.ts)_
@@ -56,8 +56,8 @@ ARGUMENTS
   RECORDINGID  String that uniquely identifies this recording resource.
 
 OPTIONS
-  -h, --help  show CLI help
   -n, --next  Displays the next page of output.
+  --help      show CLI help
 ```
 
 _See code: [src/commands/recordings/get.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/recordings/get.ts)_
@@ -74,8 +74,8 @@ OPTIONS
   -C, --conferenceId=conferenceId  Show only Recordings made during the conference with this ID.
   -c, --callId=callId              Show only Recordings made during the Call with this ID.
   -d, --dateCreated=dateCreated    Only show Recordings created on this date, formatted as YYYY-MM-DD.
-  -h, --help                       show CLI help
   -n, --next                       Displays the next page of output.
+  --help                           show CLI help
 ```
 
 _See code: [src/commands/recordings/list.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/recordings/list.ts)_
@@ -92,8 +92,8 @@ ARGUMENTS
   RECORDINGID  String that uniquely identifies this recording resource.
 
 OPTIONS
-  -h, --help  show CLI help
   -n, --next  Displays the next page of output.
+  --help      show CLI help
 ```
 
 _See code: [src/commands/recordings/stream.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/recordings/stream.ts)_

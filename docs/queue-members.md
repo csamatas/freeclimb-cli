@@ -22,7 +22,7 @@ ARGUMENTS
   CALLID   ID if the Call that the Member belongs to
 
 OPTIONS
-  -h, --help  show CLI help
+  --help  show CLI help
 ```
 
 _See code: [src/commands/queue-members/dequeue.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/queue-members/dequeue.ts)_
@@ -39,7 +39,7 @@ ARGUMENTS
   QUEUEID  String that uniquely identifies this queue resource.
 
 OPTIONS
-  -h, --help  show CLI help
+  --help  show CLI help
 ```
 
 _See code: [src/commands/queue-members/dequeue-head.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/queue-members/dequeue-head.ts)_
@@ -57,8 +57,8 @@ ARGUMENTS
   CALLID   ID of the Call that the Member belongs to
 
 OPTIONS
-  -h, --help  show CLI help
   -n, --next  Displays the next page of output.
+  --help      show CLI help
 ```
 
 _See code: [src/commands/queue-members/get.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/queue-members/get.ts)_
@@ -75,8 +75,8 @@ ARGUMENTS
   QUEUEID  String that uniquely identifies the Queue that the Member belongs to.
 
 OPTIONS
-  -h, --help  show CLI help
   -n, --next  Displays the next page of output.
+  --help      show CLI help
 ```
 
 _See code: [src/commands/queue-members/get-head.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/queue-members/get-head.ts)_
@@ -93,8 +93,8 @@ ARGUMENTS
   QUEUEID  String that uniquely identifies the Queue that the Member belongs to.
 
 OPTIONS
-  -h, --help  show CLI help
   -n, --next  Displays the next page of output.
+  --help      show CLI help
 ```
 
 _See code: [src/commands/queue-members/list.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/queue-members/list.ts)_

@@ -19,7 +19,7 @@ export class accountsManage extends Command {
             required: false,
         }),
         next: flags.boolean({ hidden: true }),
-        help: flags.help({ char: "h" }),
+        help: flags.help(),
     }
 
     async run() {

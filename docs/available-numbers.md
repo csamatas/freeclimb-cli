@@ -15,11 +15,12 @@ USAGE
 
 OPTIONS
   -a, --alias=alias              Filter on numbers based on the formatted string of the phone number.
-  -h, --help                     show CLI help
   -n, --next                     Displays the next page of output.
 
   -p, --phoneNumber=phoneNumber  PCRE-compatible regular expression to filter against phoneNumber field, which is in
                                  E.164 format.
+
+  --help                         show CLI help
 ```
 
 _See code: [src/commands/available-numbers/list.ts](https://github.com/FreeClimbAPI/freeclimb-cli/blob/v0.1.2/src/commands/available-numbers/list.ts)_
