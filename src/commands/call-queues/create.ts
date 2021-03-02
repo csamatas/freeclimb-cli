@@ -40,7 +40,7 @@ export class callQueuesCreate extends Command {
             } else if (response.data) {
                 out.out(JSON.stringify(response.data, null, 2))
             } else {
-                throw new Errors.UndefinedResponseError()
+                throw Error
             }
         }
         if (flags.next) {

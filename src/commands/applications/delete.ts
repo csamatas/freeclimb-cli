@@ -38,7 +38,7 @@ If successful, FreeClimb will return an HTTP 204 response with no body.`
             } else if (response.data) {
                 out.out(JSON.stringify(response.data, null, 2))
             } else {
-                throw new Errors.UndefinedResponseError()
+                throw Error
             }
         }
         if (flags.next) {

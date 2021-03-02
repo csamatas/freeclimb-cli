@@ -46,7 +46,7 @@ export class logsFilter extends Command {
                         : JSON.stringify(response.data, null, 2)
                 )
             } else {
-                throw new Errors.UndefinedResponseError()
+                throw Error
             }
         }
         const nextResponse = (response: FreeClimbResponse) => {
@@ -57,7 +57,7 @@ export class logsFilter extends Command {
                         : JSON.stringify(response.data, null, 2)
                 )
             } else {
-                throw new Errors.UndefinedResponseError()
+                throw Error
             }
             if (out.next === null) {
                 out.out("== You are on the last page of output. ==")

@@ -44,7 +44,7 @@ Any Call which is currently ringing is in progress from the point of view of Fre
             } else if (response.data) {
                 out.out(JSON.stringify(response.data, null, 2))
             } else {
-                throw new Errors.UndefinedResponseError()
+                throw Error
             }
         }
         if (flags.next) {
